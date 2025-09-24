@@ -1,11 +1,12 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
+import { ChevronDown} from "lucide-react"
 
 const generateTools = [
   {
     id: 1,
-    name: "Ideogram",
+    name: "Images",
     description: "Create stunning visuals with advanced AI image generation",
     icon: "/ideogram-logo.jpg",
     badge: "NEW",
@@ -32,8 +33,8 @@ const generateTools = [
     name: "Enhanced",
     description: "Enhance image quality and resolution using AI",
     icon: "/enhanced-logo.jpg",
-    badge: "PRO",
-    badgeColor: "bg-purple-500",
+    badge: "NEW",
+    badgeColor: "bg-blue-500",
   },
   {
     id: 5,
@@ -41,24 +42,33 @@ const generateTools = [
     description: "Advanced photo editing with AI-powered filters",
     icon: "/zebra-lenses-logo.jpg",
     badge: "NEW",
-    badgeColor: "bg-green-500",
+    badgeColor: "bg-blue-500",
   },
   {
     id: 6,
     name: "Serious Painter",
     description: "Transform photos into artistic paintings",
     icon: "/serious-painter-logo.jpg",
-    badge: "PRO",
-    badgeColor: "bg-orange-500",
+    badge: "NEW",
+    badgeColor: "bg-blue-500",
   },
   {
     id: 7,
     name: "Tran",
     description: "AI-powered image translation and text extraction",
     icon: "/tran-logo.jpg",
+    badge: "NEW",
+    badgeColor: "bg-blue-500",
+  },
+   {
+    id: 8,
+    name: "Tran",
+    description: "AI-powered image translation and text extraction",
+    icon: "/tran-logo.jpg",
     badge: "",
     badgeColor: "",
   },
+
 ]
 
 export function GenerateSection() {
@@ -66,7 +76,9 @@ export function GenerateSection() {
     <section className="space-y-6">
       <div className="flex items-center justify-between">
         <h2 className="text-2xl font-bold text-foreground">Generate</h2>
-        <Button variant="ghost" className="text-primary hover:text-primary/80">
+
+        <Button variant="ghost" className="text-blue-700 font-bold hover:text-primary/80">
+          <ChevronDown className="w-4 h-4 " />
           View all
         </Button>
       </div>

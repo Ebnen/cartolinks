@@ -10,9 +10,9 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "AI Tools Gallery - Frontend",
-  description: "Discover and explore the best AI tools for your projects",
-  generator: "v0.app",
+  title: "Cartolink",
+  description: "cartolink projects",
+  generator: "ebenzy",
 }
 
 export default function RootLayout({
