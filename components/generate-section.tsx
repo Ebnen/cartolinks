@@ -113,7 +113,7 @@ export function GenerateSection() {
                 <Button
                   variant="ghost"
                   size="sm"
-                  className="text-primary hover:text-primary/80 opacity-0 group-hover:opacity-100 transition-opacity"
+                  className="text-black border bg-gray-200 hover:bg-white hover:text-black font-bold"
                 >
                   Open
                 </Button>

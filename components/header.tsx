@@ -3,7 +3,8 @@
 import { Button } from "@/components/ui/button"
 import { ModeToggle } from "@/components/mode-toggle"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { Home, Bookmark, ImageIcon, Zap, Settings, HelpCircle, Search, Bell, Menu,  GalleryHorizontal, Music2Icon} from "lucide-react"
+import { Home, Bookmark, ImageIcon, Zap, Settings, HelpCircle,  Gavel, Bell, Menu,  GalleryHorizontal, Music2Icon, Type, ChevronDown,Headphones  } from "lucide-react"
+import { HomeIcon,  PhotoIcon, VideoCameraIcon, FolderIcon, BellIcon  } from "@heroicons/react/24/solid"
 
 export function Header() {
   return (
@@ -20,61 +21,66 @@ export function Header() {
               <AvatarImage src="/diverse-user-avatars.png" />
               <AvatarFallback>U</AvatarFallback>
             </Avatar>
+              <span className="text-sm font-bold text-gray-700">benevolentminibot</span>
+              <ChevronDown className="w-4 h-4  " />
             </div>
             </div>
 
-              <div className="b-1 bg-gray-100">
+              <div className="b-1 bg-gray-100 rounded-xl p-3">
             <nav className="hidden md:flex items-center space-x-1">
-              <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground">
-                <Home className="mr-2 h-4 w-4" />
+              <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground hover:bg-white">
+                <HomeIcon className="mr-2 h-6 w-6 text-black" />
               </Button>
 
               <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground">
-                <Bookmark className="mr-2 h-4 w-4" />
+                < PhotoIcon className="mr-2 h-6 w-6 text-black" />
               </Button>
+    
               <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground">
-                <ImageIcon className="mr-2 h-4 w-4" />
+                <VideoCameraIcon className="mr-2 h-6 w-6  text-black" />
+              </Button>
+
+              <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground">
+                <Type className="mr-2 h-6 w-6 text-black" />
                 
               </Button>
-              <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground">
-                <Zap className="mr-2 h-4 w-4" />
-               
+
+               <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground">
+                < Gavel className="mr-2 h-6 w-6 text-black" />
               </Button>
+
+
+
               <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground">
-                <Settings className="mr-2 h-4 w-4" />
-                
-              </Button>
-              <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground">
-                <HelpCircle className="mr-2 h-4 w-4" />
-                
+                <FolderIcon className="mr-2 h-6 w-6 text-black" />
               </Button>
             </nav>
           </div>
 
           {/* Right side - Search, Notifications, Profile */}
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-2 ">
             <div className="hidden md:flex items-center space-x-2">
-              <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground">
-                <GalleryHorizontal className="h-4 w-4"/>
+              <Button variant="ghost" size="sm" className=" border border-gray-300 hover:bg-white hover:text-black">
+                < PhotoIcon className="h-5 w-5 text-black-700"/>
                 Gallery
               </Button>
             </div>
 
             <div className="hidden md:flex items-center space-x-2">
-              <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground">
-                <Music2Icon className="h-4 w-4"/>
-                Gallery
+              <Button variant="ghost" size="sm" className=" border border-gray-300 hover:bg-white hover:text-black">
+                <Headphones className="h-5 w-5 text-black"/>
+                Support
               </Button>
             </div>
 
             <Button variant="ghost" size="icon">
-              <Bell className="h-4 w-4 text-blue-300" />
+              <BellIcon className="h-5 w-5" />
             </Button>
 
             <ModeToggle />
 
             <Button variant="ghost" size="icon" className="md:hidden">
-              <Menu className="h-4 w-4" />
+              <Menu className="h-5 w-5" />
             </Button>
 
             
